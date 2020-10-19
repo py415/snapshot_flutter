@@ -28,6 +28,8 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
 
   // Save and add new place to list of location.
   void _savePlace() {
+    print('Save place button tapped');
+
     if (_titleController.text.isEmpty || _pickedImage == null) {
       return;
     }

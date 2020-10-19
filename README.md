@@ -18,7 +18,7 @@ Snapshot is a photo memorabilia app that allows users to take memorable photos o
 - [x] User shall be able to see a list of places that the user has previously taken a snapshot of.
 - [ ] User shall be able to tap on a row of the list of places and see more details of that place.
 - [x] User shall be able to add new places to their list of places.
-- [ ] User taken and selected photos shall persist across app restarts.
+- [x] User taken and selected photos shall persist across app restarts.
 
 ## App Walkthrough
 
@@ -36,6 +36,7 @@ Here's a GIF of how the app works:
 - [image_picker](https://github.com/flutter/plugins/tree/master/packages/image_picker/image_picker) - A Flutter plugin for iOS and Android for picking images from the image library, and taking new pictures with the camera.
 - [path_provider](https://github.com/flutter/plugins/tree/master/packages/path_provider/path_provider) - A Flutter plugin for finding commonly used locations on the filesystem. Supports iOS, Android, Linux and MacOS. Not all methods are supported on all platforms.
 - [path](https://github.com/dart-lang/path) - The path package provides common operations for manipulating paths: joining, splitting, normalizing, etc.
+- [sqflite](https://github.com/tekartik/sqflite) - SQLite plugin for Flutter. Supports iOS, Android and MacOS.
 
 ## Credits
 
