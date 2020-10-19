@@ -2,27 +2,43 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 
+import '../helpers/location_helper.dart';
 import '../helpers/db_helper.dart';
 import '../models/place.dart';
 
 // Blueprint for a list of places.
 class Places with ChangeNotifier {
   // List of places.
-  final List<Place> _items = [];
+  List<Place> _items = [];
 
   // Get the list of places.
   List<Place> get items {
     return [..._items];
   }
 
+  // Find place by id.
+  Place findById(String id) {
+    return _items.firstWhere((place) => place.id == id);
+  }
+
   // Add new place to list of places.
   // Notify all items listeners when new place is added.
-  void addPlace({String pickedTitle, File pickedImage}) {
+  Future<void> addPlace(
+      {String pickedTitle,
+      File pickedImage,
+      PlaceLocation pickedLocation}) async {
+    final address = await LocationHelper.getPlaceAddress(
+        pickedLocation.latitude, pickedLocation.longitude);
+    final updatedLocation = PlaceLocation(
+      latitude: pickedLocation.latitude,
+      longitude: pickedLocation.longitude,
+      address: address,
+    );
     final newPlace = Place(
       id: DateTime.now().toString(),
       image: pickedImage,
       title: pickedTitle,
-      location: null,
+      location: updatedLocation,
     );
 
     // Add new place to our list of places.
@@ -36,6 +52,9 @@ class Places with ChangeNotifier {
         'id': newPlace.id,
         'title': newPlace.title,
         'image': newPlace.image.path,
+        'loc_lat': newPlace.location.latitude,
+        'loc_lng': newPlace.location.longitude,
+        'address': newPlace.location.address,
       },
     );
   }
@@ -44,13 +63,17 @@ class Places with ChangeNotifier {
   Future<void> fetchAndSetPlaces() async {
     final dataList = await DBHelper.getData('user_places');
 
-    dataList
+    _items = dataList
         .map(
           (item) => Place(
             id: item['id'],
             title: item['title'],
             image: File(item['image']),
-            location: null,
+            location: PlaceLocation(
+              latitude: item['loc_lat'],
+              longitude: item['loc_lng'],
+              address: item['address'],
+            ),
           ),
         )
         .toList();

@@ -16,9 +16,10 @@ Snapshot is a photo memorabilia app that allows users to take memorable photos o
 ### User Stories
 
 - [x] User shall be able to see a list of places that the user has previously taken a snapshot of.
-- [ ] User shall be able to tap on a row of the list of places and see more details of that place.
+- [x] User shall be able to tap on a row of the list of places and see more details of that place.
 - [x] User shall be able to add new places to their list of places.
 - [x] User taken and selected photos shall persist across app restarts.
+- [x] User shall be able to see a Google Map preview of the selected place.
 
 ## App Walkthrough
 
@@ -37,6 +38,9 @@ Here's a GIF of how the app works:
 - [path_provider](https://github.com/flutter/plugins/tree/master/packages/path_provider/path_provider) - A Flutter plugin for finding commonly used locations on the filesystem. Supports iOS, Android, Linux and MacOS. Not all methods are supported on all platforms.
 - [path](https://github.com/dart-lang/path) - The path package provides common operations for manipulating paths: joining, splitting, normalizing, etc.
 - [sqflite](https://github.com/tekartik/sqflite) - SQLite plugin for Flutter. Supports iOS, Android and MacOS.
+- [location](https://github.com/Lyokone/flutterlocation) - This plugin for Flutter handles getting location on Android and iOS. It also provides callbacks when location is changed.
+- [google_maps_flutter](https://github.com/flutter/plugins/tree/master/packages/google_maps_flutter/google_maps_flutter) - A Flutter plugin that provides a [Google Maps](https://cloud.google.com/maps-platform/) widget.
+- [http](https://github.com/dart-lang/http) - A composable, Future-based library for making HTTP requests.
 
 ## Credits
 

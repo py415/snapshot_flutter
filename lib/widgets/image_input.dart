@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart' as syspath;
 
 // Blueprint for image input widget.
 class ImageInput extends StatefulWidget {
+  // Method that handles user selected image.
   final Function onSelectImage;
 
   ImageInput({this.onSelectImage});

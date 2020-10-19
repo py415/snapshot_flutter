@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:snapshot_flutter/providers/places.dart';
 
+import './place_detail_screen.dart';
 import './add_place_screen.dart';
+import '../providers/places.dart';
 
 class PlacesListScreen extends StatelessWidget {
+  // Route name to screen.
   static const routeName = '/';
 
   @override
@@ -39,8 +41,13 @@ class PlacesListScreen extends StatelessWidget {
                             backgroundImage: FileImage(places.items[i].image),
                           ),
                           title: Text(places.items[i].title),
+                          subtitle: Text(places.items[i].location.address),
                           onTap: () {
                             // Segue to details page...
+                            Navigator.of(context).pushNamed(
+                              PlaceDetailScreen.routeName,
+                              arguments: places.items[i].id,
+                            );
                           },
                         ),
                       ),
