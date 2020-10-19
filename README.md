@@ -4,8 +4,9 @@
 1. [Overview](#Overview)
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
-4. [Libraries](#Libraries)
-5. [Credits](#Credits)
+4. [APIs](#APIs)
+5. [Libraries](#Libraries)
+6. [Credits](#Credits)
 
 ## Overview
 ### Description
@@ -28,6 +29,10 @@ Here's a GIF of how the app works:
 <img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-snapshot.gif" width=250>
 
 <img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-snapshot.gif" width=250>
+
+## APIs
+
+- [Google Maps API](https://developers.google.com/maps/documentation) - Add maps based on Google maps data to your application.
 
 ## Libraries
 
