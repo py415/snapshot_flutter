@@ -26,9 +26,9 @@ Snapshot is a photo memorabilia app that allows users to take memorable photos o
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-snapshot.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/ios/flutter-ios-snapshot.gif" width="250" />
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-snapshot.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/android/flutter-android-snapshot.gif" width="250" />
 
 ## APIs
 
