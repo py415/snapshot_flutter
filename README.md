@@ -1,19 +1,19 @@
-# Snapshot
+# 📸 Snapshot
 
-## Table of Contents
-1. [Overview](#Overview)
-2. [Product Specs](#Product-Specs)
-3. [App Walkthrough](#App-Walkthrough)
-4. [APIs](#APIs)
-5. [Libraries](#Libraries)
-6. [Credits](#Credits)
+## 📋 Table of Contents
+1. [Overview](#-Overview)
+2. [Product Specs](#-Product-Specs)
+3. [App Walkthrough](#-App-Walkthrough)
+4. [APIs](#-APIs)
+5. [Libraries](#-Libraries)
+6. [Credits](#-Credits)
 
-## Overview
+## 👀 Overview
 ### Description
 
 Snapshot is a photo memorabilia app that allows users to take memorable photos of places and store them on the device locally.
 
-## Product Specs
+## 📕 Product Specs
 ### User Stories
 
 - [x] User shall be able to see a list of places that the user has previously taken a snapshot of.
@@ -22,19 +22,19 @@ Snapshot is a photo memorabilia app that allows users to take memorable photos o
 - [x] User taken and selected photos shall persist across app restarts.
 - [x] User shall be able to see a Google Map preview of the selected place.
 
-## App Walkthrough
+## 🎬 App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/ios/flutter-ios-snapshot.gif" width="250" />
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/GIFs/flutter/ios/flutter-ios-snapshot.gif" width="250" />
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/android/flutter-android-snapshot.gif" width="250" />
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/GIFs/flutter/android/flutter-android-snapshot.gif" width="250" />
 
-## APIs
+## 🔑 APIs
 
 - [Google Maps API](https://developers.google.com/maps/documentation) - Add maps based on Google maps data to your application.
 
-## Libraries
+## 📚 Libraries
 
 - [cupertino_icons](https://github.com/flutter/cupertino_icons) - This is an asset repo containing the default set of icon assets used by Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino).
 - [pedantic](https://github.com/dart-lang/pedantic) - Most of the recommended lints directly implement the guidelines set out in [Effective Dart](https://dart.dev/guides/language/effective-dart).
@@ -47,6 +47,6 @@ Here's a GIF of how the app works:
 - [google_maps_flutter](https://github.com/flutter/plugins/tree/master/packages/google_maps_flutter/google_maps_flutter) - A Flutter plugin that provides a [Google Maps](https://cloud.google.com/maps-platform/) widget.
 - [http](https://github.com/dart-lang/http) - A composable, Future-based library for making HTTP requests.
 
-## Credits
+## 💳 Credits
 
 >This is a companion project to Flutter & Dart - The Complete Guide, check out the full course at [www.academind.com](https://academind.com/).
